@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+
+import 'bootstrap/dist/css/bootstrap.min.css'; //importing bootstrap styles
+import "./index.css"; // importing my styles, after the bootstrap css, want ours to take be dominant
 
 ReactDOM.render(
   <React.StrictMode>

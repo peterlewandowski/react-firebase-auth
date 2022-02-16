@@ -12,6 +12,8 @@ import {
 } from "firebase/auth";
 import { app } from "../ConnectAuth";
 
+import Button from 'react-bootstrap/Button';
+
 export default function Login({ setUser, user }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -78,12 +80,13 @@ console.log('Here is my user from my parent App component', user)
         <br />
         <input type="submit" value="Login" />
       </form>
-      <button
+      <Button
         onClick={handleGoogleLogin}
         style={{ backgroundColor: "black", color: "white", border: "none" }}
       >
         Sign in with Google
-      </button>
+      </Button>
+      <Button >test</Button>
       <p>
         Not a user? <Link to="/signup">Sign Up</Link>
       </p>
